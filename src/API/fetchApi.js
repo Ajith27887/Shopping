@@ -1,5 +1,3 @@
-import React from "react";
-
 
 async function Shopping() {
     const product = "https://fakestoreapi.com/products";
