@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import Shopping  from './API/fetchApi';
+import {ProductProvider} from "./API/fetchApi";
+import ListProduct from './Components/js/ListProduct';
 
-function App() {
+
+const App = () => {
   return (
-    <div>
-      <p>HI</p>
-      <Shopping></Shopping>
-    </div>
+      <ProductProvider>
+     	<ListProduct/>
+      </ProductProvider>
   );
 }
 
