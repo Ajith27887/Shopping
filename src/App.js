@@ -6,7 +6,7 @@ import ListProduct from './Components/js/ListProduct';
 const App = () => {
   return (
       <ProductProvider>
-     	<ListProduct/>
+     	  <ListProduct/>
       </ProductProvider>
   );
 }
