@@ -1,13 +1,18 @@
 import './App.css';
-import {ProductProvider} from "./API/fetchApi";
-import ListProduct from './Components/js/ListProduct';
+import Home from './Components/Home';
+import { Routes, Route } from 'react-router-dom'
+import NavBar from './Components/NavBar';
+import SideMenu from './Components/SideMenu';
 
 
 const App = () => {
   return (
-      <ProductProvider>
-     	  <ListProduct/>
-      </ProductProvider>
+		<Routes>
+			<Route path='/' element={<NavBar/>}>
+				<Route exact path='/' element={<Home/>}/>
+				<Route path='/SideMenu' element={<SideMenu/>} />
+			</Route>
+		</Routes>
   );
 }
 
